@@ -7,3 +7,15 @@ function printBadges(arrayNames) {
   }
   return arrayNames;
 }
+
+function coinToss() {
+  return Math.random() >= 0.5;
+}
+
+function tailsNeverFails() {
+  let counter = 0;
+  while(coinToss()) {
+    counter++
+  }
+  console.log(`You got${counter} tails in a row!`)
+}
