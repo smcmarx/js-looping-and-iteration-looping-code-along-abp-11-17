@@ -17,6 +17,5 @@ function tailsNeverFails() {
   while(coinToss()) {
     counter++
   }
-  console.log(`You got${counter} tails in a row!`)
+  return (`You got${counter} tails in a row!`)
 }
-
